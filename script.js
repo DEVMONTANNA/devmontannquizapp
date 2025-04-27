@@ -629,7 +629,9 @@ function checker() {
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
     document.querySelector(".displayer").textContent = "CORRECT";
   } else {
-    document.querySelector(".displayer").textContent = "WRONG";
+    document.querySelector(
+      ".displayer"
+    ).textContent = ` Wrong::Correct Answer is${randomGenerator.correctAnswer}`;
   }
 }
 
