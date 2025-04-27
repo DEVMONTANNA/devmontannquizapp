@@ -631,7 +631,7 @@ function checker() {
   } else {
     document.querySelector(
       ".displayer"
-    ).textContent = ` Wrong::Correct Answer is${randomGenerator.correctAnswer}`;
+    ).textContent = ` Wrong::Correct Answer is ${randomGenerator.correctAnswer}`;
   }
 }
 
