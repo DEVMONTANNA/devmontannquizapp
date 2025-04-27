@@ -631,7 +631,7 @@ let those = document
 // }
 // score ++
 // document.querySelector(".scoreHolder").textContent = "Score: " + score
-document.querySelector(".scoreHolder").textContent = "score :"
+document.querySelector(".scoreHolder").textContent = "score :";
 function checker() {
   let info = document.getElementById("input22").value;
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
@@ -645,6 +645,12 @@ function checker() {
     score++; // Increase score by 1
     localStorage.setItem("score", score);
     document.querySelector(".scoreHolder").textContent = "Score :" + score;
+
+    if (score === 15) {
+      document.querySelector(
+        ".show"
+      ).textContent = `You have reached ${score} you won the game`;
+    }
   } else {
     document.querySelector(".displayer").textContent =
       "wrong!! The Correct Answer is" + " " + randomGenerator.correctAnswer;
@@ -652,10 +658,10 @@ function checker() {
 }
 
 function resetScore() {
-    score = 0;
-    localStorage.setItem("score", score);
-    document.querySelector(".reset").textContent = "Score: " + score;
-  }
+  score = 0;
+  localStorage.setItem("score", score);
+  document.querySelector(".reset").textContent = "Score: " + score;
+}
 // ` Wrong::Correct Answer is ${randomGenerator.correctAnswer}`;
 
 // document.querySelector(".options").textContent = randomGenerator.options;
