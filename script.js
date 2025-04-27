@@ -629,11 +629,11 @@ function checker() {
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
     document.querySelector(".displayer").textContent = "CORRECT";
   } else {
-    document.querySelector(
-      ".displayer"
-    ).textContent = ` Wrong::Correct Answer is ${randomGenerator.correctAnswer}`;
+    document.querySelector(".displayer").textContent =
+      "wrong!! The Correct Answer is" + " " + randomGenerator.correctAnswer;
   }
 }
+// ` Wrong::Correct Answer is ${randomGenerator.correctAnswer}`;
 
 // document.querySelector(".options").textContent = randomGenerator.options;
 // let options = document.querySelector(".options").style;
