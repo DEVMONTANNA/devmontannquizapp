@@ -443,7 +443,7 @@ optionsContainer.innerHTML = "";
 randomGenerator.options.forEach((option) => {
   const optionElement = document.createElement("div");
   optionElement.textContent = option;
-  optionElement.classList.add("bg-blue-300", "p-2", "rounded");
+  optionElement.classList.add("bg-blue-300", "p-2", "rounded", "mt-[10px]");
   optionsContainer.appendChild(optionElement);
 });
 if (quizQuestions.length === 0 && randomGenerator) {
