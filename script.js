@@ -332,8 +332,8 @@
 
 const quizQuestions = [
   {
-    qustion: "Who is the author of harry porter?",
-    answer: [
+    question: "Who is the author of harry porter?",
+    options: [
       "(1)  J.R.R. Tolkien",
       "(2)  J.K. Rowling",
       "(3) George R.R. Martin",
@@ -354,8 +354,208 @@ const quizQuestions = [
 
   {
     question: "What is the chemical symbol for water?",
-    options: [" (1) O2", " (2) CO2", " (3) H2O", " (4) O3"],
-    correctAnswer: "H2O",
+    options: [" (1) O2", " (2) CO2", " (3) H20", " (4) O3"],
+    correctAnswer: "H20",
+  },
+  {
+    question: "Which planet is known as the Red Planet?",
+    options: [" (1) Earth", " (2) Mars", " (3) Jupiter", " (4) Venus"],
+    correctAnswer: "Mars",
+  },
+  {
+    question: "What is the largest ocean on Earth?",
+    options: [
+      " (1) Atlantic Ocean",
+      " (2) Indian Ocean",
+      " (3) Arctic Ocean",
+      " (4) Pacific Ocean",
+    ],
+    correctAnswer: "Pacific Ocean",
+  },
+  {
+    question: "Which element has the chemical symbol 'O'?",
+    options: [" (1) Oxygen", " (2) Gold", " (3) Osmium", " (4) Ozone"],
+    correctAnswer: "Oxygen",
+  },
+  {
+    question: "Who wrote 'To Kill a Mockingbird'?",
+    options: [
+      " (1) Harper Lee",
+      " (2) Mark Twain",
+      " (3) Charles Dickens",
+      " (4) J.K. Rowling",
+    ],
+    correctAnswer: "Harper Lee",
+  },
+  {
+    question: "What is the square root of 64?",
+    options: [" (1) 6", " (2) 8", " (3) 10", " (4) 12"],
+    correctAnswer: "8",
+  },
+  {
+    question: "Which country is known as the Land of the Rising Sun?",
+    options: [" (1) China", " (2) Japan", " (3) Korea", " (4) Thailand"],
+    correctAnswer: "Japan",
+  },
+  {
+    question: "What is the hardest natural substance on Earth?",
+    options: [" (1) Gold", " (2) Iron", " (3) Diamond", " (4) Platinum"],
+    correctAnswer: "Diamond",
+  },
+  {
+    question: "Who painted the Mona Lisa?",
+    options: [
+      " (1) Leonardo da Vinci",
+      " (2) Pablo Picasso",
+      " (3) Vincent van Gogh",
+      " (4) Michelangelo",
+    ],
+    correctAnswer: "Leonardo da Vinci",
+  },
+  {
+    question: "Which element has the atomic number 1?",
+    options: [" (1) Helium", " (2) Oxygen", " (3) Hydrogen", " (4) Carbon"],
+    correctAnswer: "Hydrogen",
+  },
+  {
+    question: "What does HTML stand for?",
+    options: [
+      " (1) Hyper Text Markup Language",
+      " (2) High Text Machine Language",
+      " (3) Hyperlink Text Markup Language",
+      " (4) High Time Markup Language",
+    ],
+    correctAnswer: "Hyper Text Markup Language",
+  },
+  {
+    question:
+      "What is the correct syntax to print 'Hello World' in JavaScript?",
+    options: [
+      " (1) echo('Hello World');",
+      " (2) console.log('Hello World');",
+      " (3) print('Hello World');",
+      " (4) printf('Hello World');",
+    ],
+    correctAnswer: "console.log('Hello World');",
+  },
+  {
+    question:
+      "Which of the following is used to declare a variable in JavaScript?",
+    options: [" (1) var", " (2) let", " (3) const", " (4) All of the above"],
+    correctAnswer: "All of the above",
+  },
+  {
+    question:
+      "Which of the following data types is not primitive in JavaScript?",
+    options: [" (1) String", " (2) Boolean", " (3) Object", " (4) Number"],
+    correctAnswer: "Object",
+  },
+  {
+    question:
+      "Which method is used to add an element to the end of an array in JavaScript?",
+    options: [" (1) append()", " (2) push()", " (3) add()", " (4) insert()"],
+    correctAnswer: "push()",
+  },
+  {
+    question: "What does CSS stand for?",
+    options: [
+      " (1) Computer Style Sheets",
+      " (2) Creative Style Sheets",
+      " (3) Cascading Style Sheets",
+      " (4) Colorful Style Sheets",
+    ],
+    correctAnswer: "Cascading Style Sheets",
+  },
+  {
+    question:
+      "Which of the following is used to loop through an array in JavaScript?",
+    options: [" (1) for", " (2) forEach", " (3) map", " (4) All of the above"],
+    correctAnswer: "All of the above",
+  },
+  {
+    question:
+      "What is the result of the following code: '5' + 3 in JavaScript?",
+    options: [" (1) 53", " (2) 8", " (3) '53'", " (4) Error"],
+    correctAnswer: "'53'",
+  },
+  {
+    question: "What is the correct way to create a function in JavaScript?",
+    options: [
+      " (1) function myFunction()",
+      " (2) function:myFunction()",
+      " (3) def myFunction()",
+      " (4) function = myFunction()",
+    ],
+    correctAnswer: "function myFunction()",
+  },
+  {
+    question: "Which of the following is not a JavaScript framework?",
+    options: [" (1) React", " (2) Angular", " (3) Django", " (4) Vue.js"],
+    correctAnswer: "Django",
+  },
+  {
+    question:
+      "Which operator is used for strict equality comparison in JavaScript?",
+    options: [" (1) ==", " (2) !=", " (3) ===", " (4) !=="],
+    correctAnswer: "===",
+  },
+  {
+    question:
+      "What is the correct syntax to select an element with the id 'myElement' using JavaScript?",
+    options: [
+      " (1) getElementById('myElement')",
+      " (2) document.getElementById('myElement')",
+      " (3) document.selectById('myElement')",
+      " (4) document.getElement('myElement')",
+    ],
+    correctAnswer: "document.getElementById('myElement')",
+  },
+  {
+    question: "In JavaScript, which of the following is a falsy value?",
+    options: [" (1) 0", " (2) '0'", " (3) []", " (4) {}"],
+    correctAnswer: "0",
+  },
+  {
+    question:
+      "What is the output of the following code in JavaScript: 'typeof null'?",
+    options: [" (1) object", " (2) null", " (3) undefined", " (4) Error"],
+    correctAnswer: "object",
+  },
+  {
+    question: "What is the difference between '==' and '===' in JavaScript?",
+    options: [
+      " (1) '==' compares value only, '===' compares value and type",
+      " (2) '==' compares value and type, '===' compares only value",
+      " (3) There is no difference",
+      " (4) '==' is used for objects only",
+    ],
+    correctAnswer: "'==' compares value only, '===' compares value and type",
+  },
+  {
+    question:
+      "Which method is used to convert a string to an integer in JavaScript?",
+    options: [
+      " (1) parseInt()",
+      " (2) toInteger()",
+      " (3) Number()",
+      " (4) convert()",
+    ],
+    correctAnswer: "parseInt()",
+  },
+  {
+    question: "Which of the following is not a valid JavaScript event?",
+    options: [" (1) click", " (2) mouseover", " (3) hover", " (4) focus"],
+    correctAnswer: "hover",
+  },
+  {
+    question: "What does 'DOM' stand for in web development?",
+    options: [
+      " (1) Document Online Model",
+      " (2) Document Object Model",
+      " (3) Data Object Model",
+      " (4) Digital Object Model",
+    ],
+    correctAnswer: "Document Object Model",
   },
   {
     question: "What is the capital city of France?",
@@ -363,13 +563,14 @@ const quizQuestions = [
     correctAnswer: "Paris",
   },
   {
-    quetion: "What is sushi traditionally made of?",
-    Options: [
+    question: "What is sushi traditionally made of?",
+    options: [
       " (1)  Rice and chicken",
       " (2)  Rice and fish",
       " (3) Noodles and vegetables",
       " (4) Fish and bread",
     ],
+    correctAnswer: "Rice and fish",
   },
   {
     question: "Who founded Microsoft?",
@@ -382,7 +583,7 @@ const quizQuestions = [
     correctAnswer: "BillGates",
   },
   {
-    Question: "Who wrote The Great Gatsby?",
+    question: "Who wrote The Great Gatsby?",
     options: [
       " (1)  Mark Twain",
       " (2) Charles dicken",
@@ -412,7 +613,7 @@ randomGenerator = quizQuestions[randomQuestion];
 if (quizQuestions.length >= 0 && randomGenerator) {
   document.querySelector(".displayer").textContent = randomGenerator.question;
 } else {
-  document.querySelector(".displayer222").textContent = "Try again";
+  document.querySelector(".displayer").textContent = randomGenerator.error;
 }
 
 let those = document
