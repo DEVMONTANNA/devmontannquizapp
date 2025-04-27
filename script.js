@@ -476,7 +476,7 @@ const quizQuestions = [
     question:
       "What is the result of the following code: '5' + 3 in JavaScript?",
     options: [" (1) 53", " (2) 8", " (3) '53'", " (4) Error"],
-    correctAnswer: "'53'",
+    correctAnswer: "53",
   },
   {
     question: "What is the correct way to create a function in JavaScript?",
@@ -623,16 +623,39 @@ let those = document
       checker();
     }
   });
-
+// let score = localStorage.getItem("score");
+// if (score === null || isNaN(parseInt(score))) {
+//   score = 0;
+// } else {
+//   score = parseInt(score);
+// }
+// score ++
+// document.querySelector(".scoreHolder").textContent = "Score: " + score
+document.querySelector(".scoreHolder").textContent = "score :"
 function checker() {
   let info = document.getElementById("input22").value;
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
     document.querySelector(".displayer").textContent = "CORRECT";
+    let score = localStorage.getItem("score");
+    if (score === null || isNaN(parseInt(score))) {
+      score = 0;
+    } else {
+      score = parseInt(score);
+    }
+    score++; // Increase score by 1
+    localStorage.setItem("score", score);
+    document.querySelector(".scoreHolder").textContent = "Score :" + score;
   } else {
     document.querySelector(".displayer").textContent =
       "wrong!! The Correct Answer is" + " " + randomGenerator.correctAnswer;
   }
 }
+
+function resetScore() {
+    score = 0;
+    localStorage.setItem("score", score);
+    document.querySelector(".reset").textContent = "Score: " + score;
+  }
 // ` Wrong::Correct Answer is ${randomGenerator.correctAnswer}`;
 
 // document.querySelector(".options").textContent = randomGenerator.options;
@@ -655,6 +678,7 @@ if (quizQuestions.length === 0 && randomGenerator) {
     optionsContainer.classList.remove("div");
   }
 }
+
 // alert(`${quizQuestions[0].question}`);
 // let numbers = prompt("Choose a number to answer a question");
 // for (i = quizQuestions; i >= 1; i++) {
