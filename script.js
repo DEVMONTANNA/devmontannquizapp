@@ -334,57 +334,68 @@ const quizQuestions = [
   {
     qustion: "Who is the author of harry porter?",
     answer: [
-      "J.R.R. Tolkien",
-      "J.K. Rowling",
-      "George R.R. Martin",
-      "Suzanne Collins",
+      "(1)  J.R.R. Tolkien",
+      "(2)  J.K. Rowling",
+      "(3) George R.R. Martin",
+      "(4) Suzanne Collins",
     ],
     correctAnswer: "J.K. Rowling",
   },
   {
     question: "Who was the first president of the United States?",
     options: [
-      "George Washington",
-      "Thomas Jefferson",
-      "Abraham Lincoln",
-      "John Adams",
+      " (1)  George Washington",
+      "(2)  Thomas Jefferson",
+      "(3) Abraham Lincoln",
+      "(4) John Adams",
     ],
     correctAnswer: "George Washington",
   },
 
   {
     question: "What is the chemical symbol for water?",
-    options: ["O2", "CO2", "H2O", "O3"],
+    options: [" (1) O2", " (2) CO2", " (3) H2O", " (4) O3"],
     correctAnswer: "H2O",
   },
   {
     question: "What is the capital city of France?",
-    options: ["London", "Paris", "Rome", "Berlin"],
+    options: [" (1) London", " (2) Paris", " (3) Rome", " (4) Berlin"],
     correctAnswer: "Paris",
   },
   {
     quetion: "What is sushi traditionally made of?",
     Options: [
-      "Rice and chicken",
-      "Rice and fish",
-      "Noodles and vegetables",
-      "Fish and bread",
+      " (1)  Rice and chicken",
+      " (2)  Rice and fish",
+      " (3) Noodles and vegetables",
+      " (4) Fish and bread",
     ],
   },
   {
     question: "Who founded Microsoft?",
-    options: ["Steve Jobs", "Mark Zuckerberg", "Bill Gates", "Elon Musk"],
-    correctAnswer: "Bill Gates",
+    options: [
+      "(1)  Steve Jobs",
+      " (2) Mark Zuckerberg",
+      " (3) Bill Gates",
+      " (4) Elon Musk",
+    ],
+    correctAnswer: "BillGates",
   },
   {
     Question: "Who wrote The Great Gatsby?",
-    options: ["Mark Twain", "Charles dicken", "F scott fitzgard", "harper lee"],
+    options: [
+      " (1)  Mark Twain",
+      " (2) Charles dicken",
+      " (3) F scott fitzgard",
+      " (4) harper lee",
+    ],
     correctAnswer: "F scott fitzgard",
   },
   { error: "Try Again" },
 ];
 
 let randomQuestion = Math.floor(Math.random() * quizQuestions.length);
+
 // let questionname = prompt("Choose a number to answer a question");
 // questionname = parseInt(questionname);
 
@@ -401,7 +412,7 @@ randomGenerator = quizQuestions[randomQuestion];
 if (quizQuestions.length >= 0 && randomGenerator) {
   document.querySelector(".displayer").textContent = randomGenerator.question;
 } else {
-  document.querySelector(".displayer222").textContent = randomGenerator.error;
+  document.querySelector(".displayer222").textContent = "Try again";
 }
 
 let those = document
@@ -414,10 +425,31 @@ let those = document
 
 function checker() {
   let info = document.getElementById("input22").value;
-  if (info === randomGenerator.answer) {
+  if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
     document.querySelector(".displayer").textContent = "CORRECT";
   } else {
     document.querySelector(".displayer").textContent = "WRONG";
+  }
+}
+
+// document.querySelector(".options").textContent = randomGenerator.options;
+// let options = document.querySelector(".options").style;
+// options.style.color = "red";
+// options.style.display = "block";
+
+const optionsContainer = document.querySelector(".options");
+optionsContainer.innerHTML = "";
+
+randomGenerator.options.forEach((option) => {
+  const optionElement = document.createElement("div");
+  optionElement.textContent = option;
+  optionElement.classList.add("bg-blue-300", "p-2", "rounded");
+  optionsContainer.appendChild(optionElement);
+});
+if (quizQuestions.length === 0 && randomGenerator) {
+  const removal = document.querySelector("div");
+  if (removal) {
+    optionsContainer.classList.remove("div");
   }
 }
 // alert(`${quizQuestions[0].question}`);
