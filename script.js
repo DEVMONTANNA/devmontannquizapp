@@ -646,7 +646,7 @@ function checker() {
     localStorage.setItem("score", score);
     document.querySelector(".scoreHolder").textContent = "Score :" + score;
 
-    if (score === 15) {
+    if (score === 3) {
       document.querySelector(
         ".show"
       ).textContent = `You have reached ${score} you won the game`;
