@@ -648,9 +648,8 @@ function checker() {
     document.querySelector(".scoreHolder").textContent = "Score :" + score;
 
     if (score === 10) {
-      document.querySelector(
-        ".show"
-      ).textContent = `You have reached ${score} you won the game`;
+      document.querySelector(".scoreHolder").textContent =
+        "you have reached " + +score + "Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
     } else {
     }
   } else {
@@ -677,7 +676,13 @@ optionsContainer.innerHTML = "";
 randomGenerator.options.forEach((option) => {
   const optionElement = document.createElement("div");
   optionElement.textContent = option;
-  optionElement.classList.add("bg-blue-300", "text-[black]", "p-2", "rounded", "mt-[10px]");
+  optionElement.classList.add(
+    "bg-blue-300",
+    "text-[black]",
+    "p-2",
+    "rounded",
+    "mt-[10px]"
+  );
   optionsContainer.appendChild(optionElement);
 });
 if (quizQuestions.length === 0 && randomGenerator) {
