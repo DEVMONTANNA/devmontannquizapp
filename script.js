@@ -631,7 +631,7 @@ let those = document
 // }
 // score ++
 // document.querySelector(".scoreHolder").textContent = "Score: " + score
-// document.querySelector(".scoreHolder").textContent = "score :";
+document.querySelector(".scoreHolder").textContent = "score :";
 function checker() {
   let info = document.getElementById("input22").value;
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
