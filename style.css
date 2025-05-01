@@ -4,7 +4,9 @@
 html {
   scroll-behavior: smooth;
 }
-.scoreHolder{
-    text-align: center;
+.scoreHolder {
+  text-align: center;
 }
-
+.displayer {
+  display: none;
+}

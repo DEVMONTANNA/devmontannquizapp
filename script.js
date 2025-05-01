@@ -636,7 +636,8 @@ function checker() {
   let info = document.getElementById("input22").value;
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
     document.querySelector(".displayer").textContent =
-      "YOU ARE CORRECT 🔥🔥🔥🔥🔥🔥🔥🔥🔥";
+      "YOU ARE CORRECT 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
+
     let score = localStorage.getItem("score");
     if (score === null || isNaN(parseInt(score))) {
       score = 0;
@@ -648,9 +649,13 @@ function checker() {
     document.querySelector(".scoreHolder").textContent = "Score :" + score;
 
     if (score === 10) {
+      let vv = document.querySelector(".displayer");
+      vv.style.display = "none";
       document.querySelector(".scoreHolder").textContent =
-        "you have reached " + +score + "Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
+        "you have reached  " + score + "Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
     } else {
+      document.querySelector(".scoreHolder").classList.add("displayer"); // hide scoreHolder
+      result.classList.remove("displayer");
     }
   } else {
     document.querySelector(".displayer").textContent =
