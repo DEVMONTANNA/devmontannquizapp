@@ -10,3 +10,7 @@ html {
 .displayer {
   display: none;
 }
+
+.next :hover {
+  background: green;
+}

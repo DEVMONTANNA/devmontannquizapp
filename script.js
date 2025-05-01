@@ -631,9 +631,45 @@ let those = document
 // }
 // score ++
 // document.querySelector(".scoreHolder").textContent = "Score: " + score
-document.querySelector(".scoreHolder").textContent = "score :";
+// let score =
+
+// let hh = document.querySelector(".scoreHolder").textContent = "score : 0" + score;
+
+// console.log(hh);
+
 function checker() {
   let info = document.getElementById("input22").value;
+  let answered = localStorage.getItem("answered");
+
+  if (answered === null || isNaN(parseInt(answered))) {
+    answered = 0;
+  } else {
+    answered = parseInt(answered);
+  }
+
+  answered++;
+  localStorage.setItem("answered", answered);
+
+  let totalQuestions = 10;
+  document.querySelector(
+    ".numberAnswered"
+  ).textContent = `You have answered ${answered}/${totalQuestions}`;
+
+  if (answered === totalQuestions) {
+    document.querySelector(".scoreHolder").textContent =
+      "You have reached " + score + " — Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
+  } else {
+    document.querySelector(".scoreHolder").classList.add("displayer");
+  }
+
+  let hideNext = document.querySelector(".next");
+  if (answered === 10) {
+    hideNext.classList.add("hidden");
+  } else {
+    hideNext.classList.remove("hidden");
+  }
+
+  // CHECK IF CORRECT
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
     document.querySelector(".displayer").textContent =
       "YOU ARE CORRECT 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
@@ -644,29 +680,31 @@ function checker() {
     } else {
       score = parseInt(score);
     }
-    score++; // Increase score by 1
+
+    score++; // only increase score if correct
     localStorage.setItem("score", score);
-    document.querySelector(".scoreHolder").textContent = "Score :" + score;
+    document.querySelector(".scoreHolder").textContent = "Score: " + score;
 
     if (score === 10) {
-      let vv = document.querySelector(".displayer");
-      vv.style.display = "none";
+      document.querySelector(".displayer").style.display = "none";
       document.querySelector(".scoreHolder").textContent =
-        "you have reached  " + score + " Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
+        "You have reached " + score + " — Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
     } else {
-      document.querySelector(".scoreHolder").classList.add("displayer"); // hide scoreHolder
-      result.classList.remove("displayer");
+      document.querySelector(".scoreHolder").classList.add("displayer");
     }
   } else {
     document.querySelector(".displayer").textContent =
-      "wrong!! The Correct Answer is" + " " + randomGenerator.correctAnswer;
+      "Wrong!! The Correct Answer is: " + randomGenerator.correctAnswer;
   }
 }
 
 function resetScore() {
-  score = "";
+  score = 0;
   localStorage.setItem("score", score);
+  localStorage.setItem("answered", 0);
   document.querySelector(".scoreholder").textContent = "Score: " + score;
+  document.querySelector(".numberAnswered").textContent =
+    "You have answered 0/10";
 }
 // ` Wrong::Correct Answer is ${randomGenerator.correctAnswer}`;
 
