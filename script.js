@@ -635,7 +635,8 @@ let those = document
 function checker() {
   let info = document.getElementById("input22").value;
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
-    document.querySelector(".displayer").textContent = "CORRECT";
+    document.querySelector(".displayer").textContent =
+      "YOU ARE CORRECT 🔥🔥🔥🔥🔥🔥🔥🔥🔥";
     let score = localStorage.getItem("score");
     if (score === null || isNaN(parseInt(score))) {
       score = 0;
@@ -676,7 +677,7 @@ optionsContainer.innerHTML = "";
 randomGenerator.options.forEach((option) => {
   const optionElement = document.createElement("div");
   optionElement.textContent = option;
-  optionElement.classList.add("bg-blue-300", "p-2", "rounded", "mt-[10px]");
+  optionElement.classList.add("bg-blue-300", "text-[black]", "p-2", "rounded", "mt-[10px]");
   optionsContainer.appendChild(optionElement);
 });
 if (quizQuestions.length === 0 && randomGenerator) {
