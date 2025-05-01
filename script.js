@@ -339,7 +339,7 @@ const quizQuestions = [
       "(3) George R.R. Martin",
       "(4) Suzanne Collins",
     ],
-    correctAnswer: "J.K. Rowling",
+    correctAnswer: "4",
   },
   {
     question: "Who was the first president of the United States?",
@@ -349,18 +349,18 @@ const quizQuestions = [
       "(3) Abraham Lincoln",
       "(4) John Adams",
     ],
-    correctAnswer: "George Washington",
+    correctAnswer: "1",
   },
 
   {
     question: "What is the chemical symbol for water?",
     options: [" (1) O2", " (2) CO2", " (3) H20", " (4) O3"],
-    correctAnswer: "H20",
+    correctAnswer: "3",
   },
   {
     question: "Which planet is known as the Red Planet?",
     options: [" (1) Earth", " (2) Mars", " (3) Jupiter", " (4) Venus"],
-    correctAnswer: "Mars",
+    correctAnswer: "2",
   },
   {
     question: "What is the largest ocean on Earth?",
@@ -370,12 +370,12 @@ const quizQuestions = [
       " (3) Arctic Ocean",
       " (4) Pacific Ocean",
     ],
-    correctAnswer: "Pacific Ocean",
+    correctAnswer: "4",
   },
   {
     question: "Which element has the chemical symbol 'O'?",
     options: [" (1) Oxygen", " (2) Gold", " (3) Osmium", " (4) Ozone"],
-    correctAnswer: "Oxygen",
+    correctAnswer: "1",
   },
   {
     question: "Who wrote 'To Kill a Mockingbird'?",
@@ -385,22 +385,22 @@ const quizQuestions = [
       " (3) Charles Dickens",
       " (4) J.K. Rowling",
     ],
-    correctAnswer: "Harper Lee",
+    correctAnswer: "1",
   },
   {
     question: "What is the square root of 64?",
     options: [" (1) 6", " (2) 8", " (3) 10", " (4) 12"],
-    correctAnswer: "8",
+    correctAnswer: "2",
   },
   {
     question: "Which country is known as the Land of the Rising Sun?",
     options: [" (1) China", " (2) Japan", " (3) Korea", " (4) Thailand"],
-    correctAnswer: "Japan",
+    correctAnswer: "2",
   },
   {
     question: "What is the hardest natural substance on Earth?",
     options: [" (1) Gold", " (2) Iron", " (3) Diamond", " (4) Platinum"],
-    correctAnswer: "Diamond",
+    correctAnswer: "3",
   },
   {
     question: "Who painted the Mona Lisa?",
@@ -410,12 +410,12 @@ const quizQuestions = [
       " (3) Vincent van Gogh",
       " (4) Michelangelo",
     ],
-    correctAnswer: "Leonardo da Vinci",
+    correctAnswer: "1",
   },
   {
     question: "Which element has the atomic number 1?",
     options: [" (1) Helium", " (2) Oxygen", " (3) Hydrogen", " (4) Carbon"],
-    correctAnswer: "Hydrogen",
+    correctAnswer: "3",
   },
   {
     question: "What does HTML stand for?",
@@ -425,7 +425,7 @@ const quizQuestions = [
       " (3) Hyperlink Text Markup Language",
       " (4) High Time Markup Language",
     ],
-    correctAnswer: "Hyper Text Markup Language",
+    correctAnswer: "1",
   },
   {
     question:
@@ -436,25 +436,25 @@ const quizQuestions = [
       " (3) print('Hello World');",
       " (4) printf('Hello World');",
     ],
-    correctAnswer: "console.log('Hello World');",
+    correctAnswer: "2",
   },
   {
     question:
       "Which of the following is used to declare a variable in JavaScript?",
     options: [" (1) var", " (2) let", " (3) const", " (4) All of the above"],
-    correctAnswer: "All of the above",
+    correctAnswer: "4",
   },
   {
     question:
       "Which of the following data types is not primitive in JavaScript?",
     options: [" (1) String", " (2) Boolean", " (3) Object", " (4) Number"],
-    correctAnswer: "Object",
+    correctAnswer: "3",
   },
   {
     question:
       "Which method is used to add an element to the end of an array in JavaScript?",
     options: [" (1) append()", " (2) push()", " (3) add()", " (4) insert()"],
-    correctAnswer: "push()",
+    correctAnswer: "2",
   },
   {
     question: "What does CSS stand for?",
@@ -464,19 +464,19 @@ const quizQuestions = [
       " (3) Cascading Style Sheets",
       " (4) Colorful Style Sheets",
     ],
-    correctAnswer: "Cascading Style Sheets",
+    correctAnswer: "3",
   },
   {
     question:
       "Which of the following is used to loop through an array in JavaScript?",
     options: [" (1) for", " (2) forEach", " (3) map", " (4) All of the above"],
-    correctAnswer: "All of the above",
+    correctAnswer: "4",
   },
   {
     question:
       "What is the result of the following code: '5' + 3 in JavaScript?",
     options: [" (1) 53", " (2) 8", " (3) '53'", " (4) Error"],
-    correctAnswer: "53",
+    correctAnswer: "1",
   },
   {
     question: "What is the correct way to create a function in JavaScript?",
@@ -486,18 +486,18 @@ const quizQuestions = [
       " (3) def myFunction()",
       " (4) function = myFunction()",
     ],
-    correctAnswer: "function myFunction()",
+    correctAnswer: "1",
   },
   {
     question: "Which of the following is not a JavaScript framework?",
     options: [" (1) React", " (2) Angular", " (3) Django", " (4) Vue.js"],
-    correctAnswer: "Django",
+    correctAnswer: "3",
   },
   {
     question:
       "Which operator is used for strict equality comparison in JavaScript?",
     options: [" (1) ==", " (2) !=", " (3) ===", " (4) !=="],
-    correctAnswer: "===",
+    correctAnswer: "3",
   },
   {
     question:
@@ -508,18 +508,18 @@ const quizQuestions = [
       " (3) document.selectById('myElement')",
       " (4) document.getElement('myElement')",
     ],
-    correctAnswer: "document.getElementById('myElement')",
+    correctAnswer: "2",
   },
   {
     question: "In JavaScript, which of the following is a falsy value?",
     options: [" (1) 0", " (2) '0'", " (3) []", " (4) {}"],
-    correctAnswer: "0",
+    correctAnswer: "1",
   },
   {
     question:
       "What is the output of the following code in JavaScript: 'typeof null'?",
     options: [" (1) object", " (2) null", " (3) undefined", " (4) Error"],
-    correctAnswer: "object",
+    correctAnswer: "1",
   },
   {
     question: "What is the difference between '==' and '===' in JavaScript?",
@@ -529,7 +529,7 @@ const quizQuestions = [
       " (3) There is no difference",
       " (4) '==' is used for objects only",
     ],
-    correctAnswer: "'==' compares value only, '===' compares value and type",
+    correctAnswer: "1",
   },
   {
     question:
@@ -540,12 +540,12 @@ const quizQuestions = [
       " (3) Number()",
       " (4) convert()",
     ],
-    correctAnswer: "parseInt()",
+    correctAnswer: "1",
   },
   {
     question: "Which of the following is not a valid JavaScript event?",
     options: [" (1) click", " (2) mouseover", " (3) hover", " (4) focus"],
-    correctAnswer: "hover",
+    correctAnswer: "3",
   },
   {
     question: "What does 'DOM' stand for in web development?",
@@ -555,12 +555,12 @@ const quizQuestions = [
       " (3) Data Object Model",
       " (4) Digital Object Model",
     ],
-    correctAnswer: "Document Object Model",
+    correctAnswer: "2",
   },
   {
     question: "What is the capital city of France?",
     options: [" (1) London", " (2) Paris", " (3) Rome", " (4) Berlin"],
-    correctAnswer: "Paris",
+    correctAnswer: "2",
   },
   {
     question: "What is sushi traditionally made of?",
@@ -570,7 +570,7 @@ const quizQuestions = [
       " (3) Noodles and vegetables",
       " (4) Fish and bread",
     ],
-    correctAnswer: "Rice and fish",
+    correctAnswer: "2",
   },
   {
     question: "Who founded Microsoft?",
@@ -580,7 +580,7 @@ const quizQuestions = [
       " (3) Bill Gates",
       " (4) Elon Musk",
     ],
-    correctAnswer: "BillGates",
+    correctAnswer: "3",
   },
   {
     question: "Who wrote The Great Gatsby?",
@@ -590,7 +590,7 @@ const quizQuestions = [
       " (3) F scott fitzgard",
       " (4) harper lee",
     ],
-    correctAnswer: "F scott fitzgard",
+    correctAnswer: "3",
   },
   { error: "Try Again" },
 ];
@@ -631,7 +631,7 @@ let those = document
 // }
 // score ++
 // document.querySelector(".scoreHolder").textContent = "Score: " + score
-document.querySelector(".scoreHolder").textContent = "score :";
+// document.querySelector(".scoreHolder").textContent = "score :";
 function checker() {
   let info = document.getElementById("input22").value;
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
@@ -646,10 +646,11 @@ function checker() {
     localStorage.setItem("score", score);
     document.querySelector(".scoreHolder").textContent = "Score :" + score;
 
-    if (score === 3) {
+    if (score === 10) {
       document.querySelector(
         ".show"
       ).textContent = `You have reached ${score} you won the game`;
+    } else {
     }
   } else {
     document.querySelector(".displayer").textContent =
@@ -658,9 +659,9 @@ function checker() {
 }
 
 function resetScore() {
-  score = 0;
+  score = "";
   localStorage.setItem("score", score);
-  document.querySelector(".reset").textContent = "Score: " + score;
+  document.querySelector(".scoreholder").textContent = "Score: " + score;
 }
 // ` Wrong::Correct Answer is ${randomGenerator.correctAnswer}`;
 
