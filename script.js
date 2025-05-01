@@ -652,7 +652,7 @@ function checker() {
       let vv = document.querySelector(".displayer");
       vv.style.display = "none";
       document.querySelector(".scoreHolder").textContent =
-        "you have reached  " + score + "Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
+        "you have reached  " + score + " Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
     } else {
       document.querySelector(".scoreHolder").classList.add("displayer"); // hide scoreHolder
       result.classList.remove("displayer");
