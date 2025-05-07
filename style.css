@@ -11,6 +11,6 @@ html {
   display: none;
 }
 
-.next :hover {
-  background: green;
+.next {
+  display: none;
 }

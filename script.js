@@ -656,18 +656,31 @@ function checker() {
   ).textContent = `You have answered ${answered}/${totalQuestions}`;
 
   if (answered === totalQuestions) {
+    let hideNext = document.querySelector(".next");
+    document
+      .getElementById("input22")
+      .addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          resetScore();
+        }
+      });
+    if (answered === 10) {
+      hideNext.style.display = "none";
+    } else {
+      hideNext.style.display = "block";
+    }
     document.querySelector(".scoreHolder").textContent =
       "You have reached " + score + " — Congratulations 🔥🔥🔥🔥🔥🔥🔥🔥🔥 ";
   } else {
     document.querySelector(".scoreHolder").classList.add("displayer");
   }
 
-  let hideNext = document.querySelector(".next");
-  if (answered === 10) {
-    hideNext.classList.add("hidden");
-  } else {
-    hideNext.classList.remove("hidden");
-  }
+  // let hideNext = document.querySelector(".next");
+  // if (answered === 10) {
+  //   hideNext.style.display = "none";
+  // } else {
+  //   hideNext.style.display = "block";
+  // }
 
   // CHECK IF CORRECT
   if (info.toLowerCase() === randomGenerator.correctAnswer.toLowerCase()) {
@@ -753,3 +766,57 @@ if (quizQuestions.length === 0 && randomGenerator) {
 //   //   }
 // }
 // let questions = prompt(quizQuestions);
+
+// function celciustoFahrenheit(celcius) {
+//   let formula = (celcius * 9) / 5 + 32;
+//   return formula;
+// }
+
+// console.log(
+//   ` Your  conversion of  20  celcius  to Fahrenheit  is =  ${celciustoFahrenheit(
+//     20
+//   )}  `
+// );
+
+// function maxNum(num1, num2) {
+//   if (num1 > num2) {
+//     console.log(num1 + " is greater than " + num2);
+//   } else if (num2 > num1) {
+//     console.log(num2 + " is greater than " + num1);
+//   } else {
+//     console.log("invalid");
+//   }
+// }
+
+// console.log(maxNum(10, 2));
+
+// function factorial(number) {
+//   let result = 1;
+//   for (i = number; i > 1; i--) {
+//     result *= i;
+//   }
+//   return result;
+// }
+
+// console.log(factorial(7));
+
+// function capitalizeWordSentence(sentence) {
+//   let sen = "what is your name";
+//   let slicer = sen.slice(0, 1);
+//   let capitalLetter = slicer.toUpperCase();
+//   let remaining = sen.slice(1, sen.length);
+//   let general = capitalLetter + remaining;
+//   return general;
+// }
+// console.log(capitalizeWordSentence("what is your name"));
+
+// (function () {
+//   console.log("Hello javaScript");
+// })();
+
+function greet(name, callBack) {
+  let nam = "Goodluck";
+  return "hello " + nam;
+}
+
+console.log(greet("Goodluck"));
